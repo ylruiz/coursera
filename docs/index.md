@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+## HTML, CSS and JavaScript for Web Developers
 
-You can use the [editor on GitHub](https://github.com/ylruiz/coursera/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+### Useful resources
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+   - [CSS clean](https://www.cleancss.com/css-beautify/)
 
-### Markdown
+   - [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+   - [Google Fonts](https://fonts.google.com)
 
-```markdown
-Syntax highlighted code block
+### Assignments
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ylruiz/coursera/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+   - [Module 2-Solution](https://htmlpreview.github.io/?https://github.com/ylruiz/coursera/blob/main/html-css-js/mod2_solution/index.html)
+   - [Module 3 -Solution](https://htmlpreview.github.io/?https://github.com/ylruiz/coursera/blob/main/html-css-js/mod3_solution/index.html)
