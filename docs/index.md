@@ -5,5 +5,5 @@
    - [Google Fonts](https://fonts.google.com)
 
 ### Assignments
-   - [Module 2-Solution](https://htmlpreview.github.io/?https://github.com/ylruiz/coursera/blob/main/html-css-js/mod2_solution/index.html)
-   - [Module 3 -Solution](https://htmlpreview.github.io/?https://github.com/ylruiz/coursera/blob/main/html-css-js/mod3_solution/index.html)
+   - [Module 2-Solution](https://ylruiz.github.io/coursera/html-css-js/mod2_solution/index.html)
+   - [Module 3 -Solution](https://ylruiz.github.io/coursera/html-css-js/mod3_solution/index.html)
