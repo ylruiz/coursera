@@ -11,3 +11,4 @@ All the courses notes &amp; assignments from Coursera
    
    1.2 Assignments
    - [Module 2-Solution](https://htmlpreview.github.io/?https://github.com/ylruiz/coursera/blob/main/html-css-js/mod2_solution/index.html)
+   - [Module 3 -Solution](https://htmlpreview.github.io/?https://github.com/ylruiz/coursera/blob/main/html-css-js/mod3_solution/index.html)
