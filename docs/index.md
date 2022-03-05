@@ -3,6 +3,7 @@
    - [CSS clean](https://www.cleancss.com/css-beautify/)
    - [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
    - [Google Fonts](https://fonts.google.com)
+   - [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Learn/)
 
 ### Assignments
    - [Module 2-Solution](https://ylruiz.github.io/coursera/html-css-js/mod2_solution/index.html)
