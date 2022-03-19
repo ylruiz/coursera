@@ -10,3 +10,25 @@
    - [Module 3 -Solution](https://ylruiz.github.io/coursera/html-css-js/mod3_solution/index.html)
    - [Module 4 -Solution](https://ylruiz.github.io/coursera/html-css-js/mod4_solution/index.html)
    - [Module 5 -Solution](https://ylruiz.github.io/coursera/html-css-js/mod5_solution/index.html)
+
+### Notes
+  *HTML Structural Tags*
+   - The <header> tag
+   - The <nav> tag
+   - The <main> tag
+   - The <section> tag
+   - The <article> tag
+   - The <aside> tag
+   - The <footer> tag
+   - The <figure> tag
+   - The <figcaption> tag
+
+  *Why semantic markup is important?*
+   There are three main reasons semantic markup is important: SEO, accessibility, and maintenance.
+
+## Javascript Specialization
+### Useful resources
+   - [W3School](https://www.w3schools.com/html/html_basic.asp)
+   - [Interniting is hard](https://www.internetingishard.com)
+   - [Developer Mozilla - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+### Javascript Basics
