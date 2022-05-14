@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Basic Challenges: Challenge 9</title>
+  </head>
+  <body>
+    <h1>JavaScript Basic Challenges</h1>
+    <h2>Challenge 9</h2>
+
+    <script>
+      let color = prompt("Please, enter a color", "");
+
+      if (color === "") {
+        console.log("You entered an empty string");
+      } else {
+        color = color.toLowerCase();
+        if (color === "red" || color === "blue" || color === "yellow") {
+          console.log(`You entered a primary color`);
+        } else if (
+          color === "orange" ||
+          color === "green" ||
+          color === "purple"
+        ) {
+          console.log(`You entered neither a primary or a secondary color`);
+        } else {
+          console.log(`You entered neither a primary or a secondary color`);
+        }
+        console.log(`Your picked color was ${color}`);
+      }
+    </script>
+  </body>
+</html>
