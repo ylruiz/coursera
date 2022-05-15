@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript Basic Challenges: Challenge 13</title>
+    <title>JavaScript Basic Challenges: Challenge 14</title>
   </head>
   <body>
     <script>
@@ -12,13 +12,13 @@
 
       function hello(name) {
         if (name == null || name === "") {
-          console.log("Your didn't enter your name.");
+          return "Your didn't enter your name.";
         } else {
-          console.log(`Hello ${name} and welcome!`);
+          return `Hello ${name} and welcome!`;
         }
       }
 
-      hello(name);
+      console.log(hello(name));
     </script>
   </body>
 </html>
