@@ -9,10 +9,7 @@
   <body>
     <script>
       function randomInt(min, max, numberOfValues) {
-        const randomNumber = Math.random();
-        const randomVal = randomNumber * numberOfValues;
-        const roundedRandomVal = Math.floor(randomVal);
-        return min + roundedRandomVal;
+        return min + Math.floor(Math.random() * numberOfValues);
       }
 
       function randomIntArrayGenerator(min, max) {
