@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number Generator</title>
+  </head>
+  <body>
+    <script>
+      function randomInt(min, max, numberOfValues) {
+        const randomNumber = Math.random();
+        const randomVal = randomNumber * numberOfValues;
+        const roundedRandomVal = Math.floor(randomVal);
+        return min + roundedRandomVal;
+      }
+
+      function randomIntArrayGenerator(min, max) {
+        let randomArray = [];
+        const numberOfValues = max - min;
+
+        for (let i = 0; i < numberOfValues; i++) {
+          randomArray.push(randomInt(min, max, numberOfValues));
+        }
+
+        return randomArray;
+      }
+
+      console.log(randomIntArrayGenerator(0, 100));
+    </script>
+  </body>
+</html>
