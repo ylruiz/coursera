@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript Basic Challenges: Challenge 15</title>
+    <title>JavaScript Basic Challenges: Challenge 16</title>
   </head>
   <body>
     <script>
@@ -24,10 +24,12 @@
       function hospitality(name, foods) {
         console.log(hello(name));
         if (!isNameValid(name)) {
-          for (food of foods) {
-            console.log(`${name}, whould you like some ${food}?`);
-          }
+          console.log(`${name}, whould you like some ${foods[generateRandomInt(0, foods.length)]}?`);
         }
+      }
+
+      function generateRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
       }
 
       hospitality(name, foods);
