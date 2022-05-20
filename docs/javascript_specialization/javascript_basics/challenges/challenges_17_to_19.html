@@ -108,9 +108,14 @@
     <script>
       document.getElementById("copyright").style.color = "green";
 
+      document.querySelector("h1").className = "red";
+      document.getElementsByClassName("date")[1].className = "red";
+
       const ps = document.getElementsByTagName("p");
-      for (p of ps) {
-        p.style.color = "green";
+      for (const p of ps) {
+        if (p.className != "red") {
+          p.style.color = "green";
+        }
       }
     </script>
   </body>
