@@ -107,15 +107,14 @@
     </main>
     <script>
       document.getElementById("copyright").style.color = "green";
-
       document.querySelector("h1").className = "red";
-      document.getElementsByClassName("date")[1].className = "red";
+      document.getElementsByClassName("date")[0].className = "red";
+      document.getElementsByTagName("img")[0].src =
+        "http://meadpoint.net/images/xmasajax.jpg";
 
-      const ps = document.getElementsByTagName("p");
+      const ps = document.querySelectorAll("#two p");
       for (const p of ps) {
-        if (p.className != "red") {
-          p.style.color = "green";
-        }
+        p.className = "blue";
       }
     </script>
   </body>
