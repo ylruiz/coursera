@@ -20,9 +20,38 @@
         border-radius: 50%;
         transition: all 2s;
       }
+
+      body {
+        height: 3000px;
+      }
+
+      .one {
+        background-color: beidge;
+        transition: all 3s;
+      }
+
+      .two {
+        background-color: blueviolet;
+        transition: all 3s;
+      }
+
+      .three {
+        background-color: coral;
+        transition: all 3s;
+      }
+
+      .four {
+        background-color: cornflowerblue;
+        transition: all 3s;
+      }
+
+      .five {
+        background-color: darkgoldenrod;
+        transition: all 3s;
+      }
     </style>
   </head>
-  <body>
+  <body class="one">
     <h1>JavaScript Event Challenges 22-30</h1>
     <div>
       <p>This is paragraph number 1</p>
@@ -73,13 +102,36 @@
         }
       });
 
-      const secondDivTag = divTags[1]; 
-      secondDivTag.addEventListener("mouseover", function() {
+      const secondDivTag = divTags[1];
+      secondDivTag.addEventListener("mouseover", function () {
         secondDivTag.className = "big";
       });
 
-      secondDivTag.addEventListener("mouseout", function() {
-          secondDivTag.className = "small";
+      secondDivTag.addEventListener("mouseout", function () {
+        secondDivTag.className = "small";
+      });
+
+      let pageTop;
+      const bodyTag = document.querySelector("body");
+      window.addEventListener("scroll", function () {
+        pageTop = window.pageYOffset;
+        switch (true) {
+          case pageTop < 500:
+            bodyTag.className = "one";
+            break;
+          case pageTop < 1000:
+            bodyTag.className = "two";
+            break;
+          case pageTop < 1500:
+            bodyTag.className = "three";
+            break;
+          case pageTop < 2000:
+            bodyTag.className = "four";
+            break;
+          default:
+            bodyTag.className = "five";
+            break;
+        }
       });
     </script>
   </body>
