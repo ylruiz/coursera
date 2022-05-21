@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Event Challenges 22-30</title>
+    <style>
+      .small {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(255, 0, 0);
+        transition: all 2s;
+      }
+
+      .big {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(0, 0, 255);
+        border-radius: 50%;
+        transition: all 2s;
+      }
+    </style>
   </head>
   <body>
     <h1>JavaScript Event Challenges 22-30</h1>
@@ -18,8 +34,12 @@
       <label>Enter a number <input type="text" /></label>
       <input type="submit" value="send a number" />
     </form>
+
+    <div class="small"></div>
+
     <script>
-      const divTag = document.querySelector("div");
+      const divTags = document.querySelectorAll("div");
+      const firstDivTag = divTags[0];
       const buttonTags = document.querySelectorAll("button");
       let number = 1;
 
@@ -29,14 +49,14 @@
           `This is paragraph number ${++number}`
         );
         pElement.appendChild(textNode);
-        divTag.appendChild(pElement);
+        firstDivTag.appendChild(pElement);
       });
 
       buttonTags[1].addEventListener("click", function () {
         if (number === 1) {
           alert("Sorry, you can not delete the last paragraph");
         } else {
-          divTag.removeChild(divTag.lastElementChild);
+          firstDivTag.removeChild(firstDivTag.lastElementChild);
           number--;
         }
       });
@@ -46,11 +66,20 @@
       formTag.addEventListener("submit", function (event) {
         event.preventDefault();
         const myNum = parseInt(document.querySelector("input").value);
-        if(myNum) {
-            h1Tag.style.fontSize = myNum + "px";
+        if (myNum) {
+          h1Tag.style.fontSize = myNum + "px";
         } else {
-            alert("Please, enter a number.");
+          alert("Please, enter a number.");
         }
+      });
+
+      const secondDivTag = divTags[1]; 
+      secondDivTag.addEventListener("mouseover", function() {
+        secondDivTag.className = "big";
+      });
+
+      secondDivTag.addEventListener("mouseout", function() {
+          secondDivTag.className = "small";
       });
     </script>
   </body>
