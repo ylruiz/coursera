@@ -9,23 +9,31 @@
   <body>
     <h1>JavaScript Event Challenges 22-30</h1>
     <div>
-      <p>Here is the first paragraph</p>
+      <p>This is paragraph number 1</p>
     </div>
     <button>Add a paragraph</button>
     <button>Remove a paragraph</button>
     <script>
       const divTag = document.querySelector("div");
       const buttonTags = document.querySelectorAll("button");
-      const pElement = document.createElement("p");
-      const textNode = document.createTextNode("A new paragraph was added");
-      pElement.appendChild(textNode);
+      let number = 1;
 
       buttonTags[0].addEventListener("click", function () {
+        const pElement = document.createElement("p");
+        const textNode = document.createTextNode(
+          `This is paragraph number ${++number}`
+        );
+        pElement.appendChild(textNode);
         divTag.appendChild(pElement);
       });
 
       buttonTags[1].addEventListener("click", function () {
-        divTag.removeChild(pElement);
+        if (number === 1) {
+          alert("Sorry, you can not delete the last paragraph");
+        } else {
+          divTag.removeChild(divTag.lastElementChild);
+          number--;
+        }
       });
     </script>
   </body>
