@@ -11,15 +11,21 @@
     <div>
       <p>Here is the first paragraph</p>
     </div>
-    <button>Turn Green Dammit!</button>
+    <button>Add a paragraph</button>
+    <button>Remove a paragraph</button>
     <script>
       const divTag = document.querySelector("div");
-      const button = document.querySelector("button");
-      button.addEventListener("click", function () {
-        const pElement = document.createElement("p");
-        const textNode = document.createTextNode("A new paragraph was added");
-        pElement.appendChild(textNode);
+      const buttonTags = document.querySelectorAll("button");
+      const pElement = document.createElement("p");
+      const textNode = document.createTextNode("A new paragraph was added");
+      pElement.appendChild(textNode);
+
+      buttonTags[0].addEventListener("click", function () {
         divTag.appendChild(pElement);
+      });
+
+      buttonTags[1].addEventListener("click", function () {
+        divTag.removeChild(pElement);
       });
     </script>
   </body>
