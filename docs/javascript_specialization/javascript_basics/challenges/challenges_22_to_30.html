@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Event Challenges 22-30</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>JavaScript Event Challenges 22-30</h1>
-    <p>Here is a paragraph of test</p>
+    <p>Here is a paragraph of text</p>
+    <p>Here is another paragraph of text</p>
+    <p>Here is the last paragraph of text</p>
     <button>Turn Green Dammit!</button>
     <script>
-        const p = document.querySelector("p");
-        const button = document.querySelector("button");
-        button.addEventListener("click", function() {
-            p.style.color = "green";
-        });
+      const pTags = document.querySelectorAll("p");
+      const button = document.querySelector("button");
+      button.addEventListener("click", function () {
+        for (const p of pTags) {
+          p.style.color = "green";
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
