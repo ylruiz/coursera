@@ -8,17 +8,18 @@
   </head>
   <body>
     <h1>JavaScript Event Challenges 22-30</h1>
-    <p>Here is a paragraph of text</p>
-    <p>Here is another paragraph of text</p>
-    <p>Here is the last paragraph of text</p>
+    <div>
+      <p>Here is the first paragraph</p>
+    </div>
     <button>Turn Green Dammit!</button>
     <script>
-      const pTags = document.querySelectorAll("p");
+      const divTag = document.querySelector("div");
       const button = document.querySelector("button");
       button.addEventListener("click", function () {
-        for (const p of pTags) {
-          p.style.color = "green";
-        }
+        const pElement = document.createElement("p");
+        const textNode = document.createTextNode("A new paragraph was added");
+        pElement.appendChild(textNode);
+        divTag.appendChild(pElement);
       });
     </script>
   </body>
