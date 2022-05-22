@@ -5,34 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Basic Challenges: Challenges 10 to 16</title>
+    <script src="js/challenges_10_to_16.js" defer></script>
   </head>
-  <body>
-    <script>
-      const name = prompt("Enter your name", "");
-      const foods = ["cheese", "salad", "chicken"];
-
-      isNameValid = (name) => name == null || name === "";
-
-      function hello(name) {
-        if (isNameValid(name)) {
-          return "Your didn't enter your name.";
-        } else {
-          return `Hello ${name} and welcome!`;
-        }
-      }
-
-      function hospitality(name, foods) {
-        console.log(hello(name));
-        if (!isNameValid(name)) {
-          console.log(`${name}, whould you like some ${foods[generateRandomInt(0, foods.length)]}?`);
-        }
-      }
-
-      function generateRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
-
-      hospitality(name, foods);
-    </script>
-  </body>
+  <body></body>
 </html>
