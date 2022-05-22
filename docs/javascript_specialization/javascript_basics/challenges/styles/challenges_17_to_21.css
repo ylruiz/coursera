@@ -1,0 +1,29 @@
+body {
+  font-family: Arial;
+  line-height: 1.5em;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}
+.big {
+  font-size: 2em;
+}
+
+img {
+  float: left;
+  margin-right: 10px;
+}
+
+article {
+  overflow: hidden;
+}
