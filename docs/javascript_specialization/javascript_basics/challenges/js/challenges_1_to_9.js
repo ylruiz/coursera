@@ -2,10 +2,10 @@
   "use strict";
   const color = prompt("Please, enter a color", "");
 
-  if (color === "") {
-    console.log("You entered an empty string");
-  } else {
+  if (color) {
     handleColor(color);
+  } else {
+    console.log("You entered an empty string");
   }
 
   function handleColor(enteredColor) {
