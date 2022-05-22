@@ -5,8 +5,10 @@
   let images = [];
   let currentImage = 0;
   let imageTag = document.getElementById("myimage");
-  document.getElementById("next").onclick = showNextImage;
-  document.getElementById("previous").onclick = showPreviousImage;
+  document.getElementById("next").addEventListener("click", showNextImage);
+  document
+    .getElementById("previous")
+    .addEventListener("click", showPreviousImage);
 
   for (let i = 0; i < imagesLenght; i++) {
     images[i] = `${imageUrl}${i + 1}.jpg`;
@@ -18,7 +20,7 @@
     if (currentImage > imagesLenght - 1) {
       currentImage = 0;
     }
-    imageTag.src = images[currentImage];
+    imageTag.setAttribute("src", images[currentImage]);
   }
 
   function showPreviousImage() {
@@ -26,6 +28,6 @@
     if (currentImage === 0) {
       currentImage = 4;
     }
-    imageTag.src = images[currentImage];
+    imageTag.setAttribute("src", images[currentImage]);
   }
 })();
