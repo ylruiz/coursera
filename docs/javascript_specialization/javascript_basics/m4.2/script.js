@@ -49,12 +49,9 @@
       answer.innerHTML =
         "<h2>Please, enter a valid number! It should be different from zero 😉</h2>";
       setTimeout(function () {
-        console.log(`distance inside setTimeout ${distance}`);
         answer.innerHTML = '<h2 class="invisible">Answer goes here</h2>';
         form.reset();
       }, 3000);
     }
   }
-
-  console.log(document.getElementById("distance").value);
 })();
